@@ -1,6 +1,8 @@
 For demo purposes:
 
-Quiz server:
+//////////////////////////////////////////
+/// Quiz server:
+//////////////////////////////////////////
 
 ////////////////////////////////
 // Testing connection
@@ -40,3 +42,28 @@ Example:
 
 Response:
     'successfully added product' or Error
+
+
+//////////////////////////////////////////
+/// Quiz server to dashboard server:
+//////////////////////////////////////////
+
+////////////////////////////////
+// Sending back information
+////////////////////////////////
+
+Query:
+    POST '/quizfeedback'
+
+Example:
+    http://<IP>:<PORT>/quizfeedback
+
+JSON:
+    {
+        "token": "ThisIsTheUserToken",
+        "quizfeedback": {
+            "timetaken": 10,
+            "answers": 'ABCDABAAB',
+            "accuracy": 0.8
+        }
+    }
