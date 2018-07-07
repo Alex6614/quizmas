@@ -89,7 +89,7 @@ app.post('/quiz', (req, res) => {
     })
 })
 
-app.listen(4000, () => {
+app.listen(4000, '0.0.0.0', () => {
     console.log("Quiz server listening on port 4000");
 })
 
