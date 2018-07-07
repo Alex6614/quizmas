@@ -1,0 +1,19 @@
+.leaderboard_text {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 2%;
+    display: inline;
+}
+
+.leaderboard_percentage {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #5781d8;
+    margin: 1% 0% 1% 3%; 
+}
+
+.dashboard_box {
+    background: #5781d8;
+    border-radius: 25px;
+    display: block; 
+}
