@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>quizmas</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <img class="dashboard_icon" src="../assets/img/quizmas_icon.png">
+                </div>
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="nc-icon nc-chart-pie-35"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <p>User Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="nc-icon nc-bullet-list-67"></i>
+                            <p>Table List</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="nc-icon nc-notes"></i>
+                            <p>Quiz</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="nc-icon nc-money-coins"></i>
+                            <p>Products</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="nc-icon nc-settings-gear-64"></i>
+                            <p>Setting</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class=" container-fluid  ">
+                    <a class="navbar-brand" href="#pablo"> Dashboard </a>
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="no-icon">LOGOUT</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Leaderboard</h4>
+                                    <p class="card-category">Product awareness of clients</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="leaderboard_text">Package coverage <div class="leaderboard_percentage">230 (98%)</div></div>
+                                    <div class="leaderboard_text">Pre-existing conditions clauses <div class="leaderboard_percentage">187 (86%)</div></div>
+                                    <div class="leaderboard_text">Payment and reimbursement <div class="leaderboard_percentage">135 (73%)</div></div>
+                                    <div class="leaderboard_text">The length of claiming period <div class="leaderboard_percentage">124 (70%)</div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Insurance complaint reasons</h4>
+                                    <p class="card-category">All travel insurance</p>
+                                </div>
+                                <div class="card-body ">
+                                    <div id="chartActivity" class="ct-chart"></div>
+
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> Reasons A
+                                        <i class="fa fa-circle text-danger"></i> Reasons B
+                                        <i class="fa fa-circle text-c"></i> Reasons C
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Sales</h4>
+                                    <p class="card-category">Last Campaign Performance</p>
+                                </div>
+                                <div class="card-body ">
+                                    <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+                                </div>
+                                <div class="card-footer ">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Last update: 09:00:00 UTC
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Internet traffic</h4>
+                                </div>
+                                <div class="card-body ">
+                                    <svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="245px" class="ct-chart-line" style="width: 100%; height: 245px;"><g class="ct-grids"><line y1="210" y2="210" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="185.625" y2="185.625" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="161.25" y2="161.25" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="136.875" y2="136.875" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="112.5" y2="112.5" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="88.125" y2="88.125" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="63.75" y2="63.75" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="39.375" y2="39.375" x1="50" x2="976" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="976" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M50,210L50,140.044C88.583,140.044,127.167,116.156,165.75,116.156C204.333,116.156,242.917,90.563,281.5,90.563C320.083,90.563,358.667,90.075,397.25,90.075C435.833,90.075,474.417,74.963,513,74.963C551.583,74.963,590.167,67.163,628.75,67.163C667.333,67.163,705.917,39.863,744.5,39.863C783.083,39.863,821.667,40.594,860.25,40.594C898.833,40.594,937.417,26.7,976,26.7C1014.583,26.7,1053.167,17.925,1091.75,17.925C1130.333,17.925,1168.917,3.787,1207.5,3.787C1246.083,3.787,1284.667,-20.1,1323.25,-20.1L1323.25,210Z" class="ct-area" ct:values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path></g><g class="ct-series ct-series-b"><path d="M50,210L50,193.669C88.583,193.669,127.167,172.95,165.75,172.95C204.333,172.95,242.917,175.144,281.5,175.144C320.083,175.144,358.667,151.5,397.25,151.5C435.833,151.5,474.417,140.044,513,140.044C551.583,140.044,590.167,128.344,628.75,128.344C667.333,128.344,705.917,103.969,744.5,103.969C783.083,103.969,821.667,103.481,860.25,103.481C898.833,103.481,937.417,78.619,976,78.619C1014.583,78.619,1053.167,77.887,1091.75,77.887C1130.333,77.887,1168.917,77.4,1207.5,77.4C1246.083,77.4,1284.667,52.294,1323.25,52.294L1323.25,210Z" class="ct-area" ct:values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path></g><g class="ct-series ct-series-c"><path d="M50,210L50,204.394C88.583,204.394,127.167,182.456,165.75,182.456C204.333,182.456,242.917,193.669,281.5,193.669C320.083,193.669,358.667,183.675,397.25,183.675C435.833,183.675,474.417,163.688,513,163.688C551.583,163.688,590.167,151.744,628.75,151.744C667.333,151.744,705.917,135.169,744.5,135.169C783.083,135.169,821.667,134.925,860.25,134.925C898.833,134.925,937.417,102.994,976,102.994C1014.583,102.994,1053.167,110.063,1091.75,110.063C1130.333,110.063,1168.917,110.063,1207.5,110.063C1246.083,110.063,1284.667,85.931,1323.25,85.931L1323.25,210Z" class="ct-area" ct:values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path></g></g><g class="ct-labels"><foreignObject style="overflow: visible;" x="50" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">9:00AM</span></foreignObject><foreignObject style="overflow: visible;" x="165.75" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">12:00AM</span></foreignObject><foreignObject style="overflow: visible;" x="281.5" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">3:00PM</span></foreignObject><foreignObject style="overflow: visible;" x="397.25" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">6:00PM</span></foreignObject><foreignObject style="overflow: visible;" x="513" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">9:00PM</span></foreignObject><foreignObject style="overflow: visible;" x="628.75" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">12:00PM</span></foreignObject><foreignObject style="overflow: visible;" x="744.5" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">3:00AM</span></foreignObject><foreignObject style="overflow: visible;" x="860.25" y="215" width="115.75" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 116px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">6:00AM</span></foreignObject><foreignObject style="overflow: visible;" y="185.625" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">0</span></foreignObject><foreignObject style="overflow: visible;" y="161.25" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">100</span></foreignObject><foreignObject style="overflow: visible;" y="136.875" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">200</span></foreignObject><foreignObject style="overflow: visible;" y="112.5" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">300</span></foreignObject><foreignObject style="overflow: visible;" y="88.125" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">400</span></foreignObject><foreignObject style="overflow: visible;" y="63.75" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">500</span></foreignObject><foreignObject style="overflow: visible;" y="39.375" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">600</span></foreignObject><foreignObject style="overflow: visible;" y="15" x="10" height="24.375" width="30"><span class="ct-label ct-vertical ct-start" style="height: 24px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">700</span></foreignObject><foreignObject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">800</span></foreignObject></g></svg>
+                                </div>
+                                <div class="card-footer ">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> Quiz A
+                                        <i class="fa fa-circle text-danger"></i> Quiz B
+                                        <i class="fa fa-circle text-danger"></i> Quiz C
+                                        <i class="fa fa-circle text-danger"></i> Quiz D
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-check"></i> Data information certified
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Chartist Plugin  -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.1" type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+        demo.showNotification();
+
+    });
+</script>
+
+</html>
