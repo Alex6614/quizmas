@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import React, { Component } from 'react';
 import {
   Carousel,
@@ -25,6 +26,59 @@ const items = [
     caption: 'Slide 3'
   }
 ];
+
+class Board extends Component {
+  render() {
+    return (
+      <div className='rows'>
+        <LHSBoard />
+        <RHSBoard />
+      </div>
+    )
+  }
+}
+
+class LHSBoard extends Component {
+  render() {
+    return (
+      <Question></Question>
+    )
+  }
+}
+
+class RHSBoard extends Component {
+  render() {
+    return (<div>dfasfdafas
+      <OptionsList></OptionsList>
+    </div>)
+  }
+}
+
+class Question extends Component {
+  render() {
+    return (<div>
+      <Example></Example>
+    </div>)
+  }
+}
+
+class OptionsList extends Component {
+  render() {
+    return (<div>
+      <Option></Option>
+    </div>)
+  }
+}
+
+class Option extends Component {
+  render() {
+    return (<div></div>)
+  }
+}
+
+class QuestionText extends Component {
+  
+}
 
 class Example extends Component {
   constructor(props) {
@@ -70,6 +124,7 @@ class Example extends Component {
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
+          interval={null}
           key={item.src}
         >
           <img src={item.src} alt={item.altText} />
@@ -78,23 +133,30 @@ class Example extends Component {
       );
     });
 
+    var outerStyle = {
+      width: '800px',
+    }
+
     return (
+      <div style={outerStyle}>
       <Carousel
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
+        data={false}
       >
         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
       </Carousel>
+      </div>
     );
   }
 }
 
 
-export default Example;
+export default Board;
 
 
 
