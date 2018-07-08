@@ -89,8 +89,13 @@ class ModalApp extends React.Component {
 <br />*    The journey must depart from Hong Kong.
 <br />
 <br />
+<div className="containerOutside containerOutsideHelper">
 <div className="buttonContainer">
-    <button className="btn btn-primary" onClick={this.openModal}>Take Quiz</button>
+      <div className="rows">
+        <div className="tandctext">
+          To help you understand the terms and conditions, please take the following quiz to proceed to payment.
+        </div>
+    <button className="btn btn-primary modal-button" onClick={this.openModal}>Take Quiz</button>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -100,6 +105,8 @@ class ModalApp extends React.Component {
         >
           <App />
         </Modal>
+        </div>
+</div>
 </div>
 </div>
       </div>
@@ -159,9 +166,9 @@ class App extends Component {
     this.setUserAnswer(event.currentTarget.value);
 
     if (this.state.questionId < quizQuestions.length) {
-        setTimeout(() => this.setNextQuestion(), 300);
+        setTimeout(() => this.setNextQuestion(), 1000);
     } else {
-        setTimeout(() => this.setResults(this.getResults()), 300);
+        setTimeout(() => this.setResults(this.getResults()), 1000);
     }
   }
 

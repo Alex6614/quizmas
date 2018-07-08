@@ -71,11 +71,22 @@ font-size: large;
 .radioCustomLabel {
   text-align: center;
 }
+.tandctext {
+  text-align: left;
+}
 .rows {
   display:flex; flex-direction:row; height:100%;
 }
 .two-third-screen {
   width:603px;
+}
+.modal-button {
+  margin-left: 38px;
+}
+.containerOutsideHelper {
+  padding: 21px !important;
+  height: 80px;
+  background-color: aliceblue;
 }
 .other-vertical-screen {
   height: 20%;
